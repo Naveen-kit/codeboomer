@@ -1,0 +1,72 @@
+name: codeboomer
+description: "A new Flutter project."
+
+# Prevent accidental publishing
+publish_to: 'none'
+
+# App version
+version: 1.0.0+1
+
+# Dart SDK version
+environment:
+  sdk: ^3.11.4
+
+# -----------------------------
+# 📦 MAIN DEPENDENCIES
+# -----------------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons (Google, GitHub, etc.)
+  font_awesome_flutter: ^10.7.0
+
+  # iOS style icons
+  cupertino_icons: ^1.0.8
+
+
+# -----------------------------
+# 🛠 DEV DEPENDENCIES
+# -----------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # 🔥 REQUIRED for app icon generation
+  flutter_launcher_icons: ^0.13.1
+
+
+# -----------------------------
+# 🎨 FLUTTER CONFIG
+# -----------------------------
+flutter:
+
+  # Enables Material Icons
+  uses-material-design: true
+
+  # (Optional) register assets folder
+  # Not required for icon generation, but good practice
+  assets:
+    - assets/boomer_app_logo.png
+
+
+# -----------------------------
+# 🚀 APP ICON CONFIG (IMPORTANT)
+# MUST be outside "flutter:"
+# -----------------------------
+flutter_icons:
+
+  # Generate for Android
+  android: true
+
+  # Generate for iOS
+  ios: true
+
+  # Path to your icon image
+  image_path: "assets/boomer_app_logo.png"
+
+  # Optional (modern Android adaptive icon)
+  adaptive_icon_background: "#020617"
+  adaptive_icon_foreground: "assets/boomer_app_logo.png"
